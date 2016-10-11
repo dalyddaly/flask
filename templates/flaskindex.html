@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Flask!</title>
+</head>
+<body>
+
+<h1>Hey hey!</h1>
+<p>Flask is just great :D </p>
+
+<ol>
+    {% for album in albums%}
+
+    <li> {{ album.title }}</li>
+    <p>{{album.artist}}</p>
+    <p>{{album.year}}</p>
+
+
+    {% endfor %}
+</ol>
+
+{% for genre in genres %}
+<p>{{genre}}</p>
+{% endfor %}
+
+</body>
+</html>
